@@ -27,16 +27,20 @@ public class Main
 
         // price of chocolate
         double priceOfChocolate = 1.5;
+        System.out.println("Price of a chocolate bar: " + priceOfChocolate);
 
         // are all of the kids on the bus?
         boolean kidsAreOnBus = true;
+        System.out.println("All of the kids are on the bus: " + kidsAreOnBus);
 
         // the first letter of the alphabet
         char firstLetter = 'a';
+        System.out.println("First letter of the alphabet: " + firstLetter);
 
         // name of your favorite restaurant
         // string is not a primitive
         String favoriteRestaurant = "Texas Roadhouse";
+        System.out.println("Favorite restaurant: " + favoriteRestaurant);
 
 
     }
