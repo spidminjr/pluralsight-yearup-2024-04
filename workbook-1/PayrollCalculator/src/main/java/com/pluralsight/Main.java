@@ -23,7 +23,7 @@ public class Main {
 
         double biWeekly = hoursWorked * payRate * 2;
 
-        System.out.print("Your next paycheck total is: " + biWeekly);
+        System.out.print("Your gross pay total is: " + biWeekly);
 
     }
 }
