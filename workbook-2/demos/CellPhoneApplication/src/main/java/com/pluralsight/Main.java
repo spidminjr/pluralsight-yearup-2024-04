@@ -14,26 +14,37 @@ public class Main
     public static CellPhone register()
     {
         CellPhone phoneUser = new CellPhone();
-        String model, carrier, owner;
-        int serialNumber, phoneNumber;
+        String model, carrier, owner, phoneNumber;
+        int serialNumber;
 
         System.out.print("What is the phone serial number? ");
         serialNumber = userInput.nextInt();
+        userInput.nextLine();
 
         System.out.print("What model is the phone? ");
-        model = userInput.next();
+        model = userInput.nextLine();
 
         System.out.print("Who is the carrier? ");
-        carrier = userInput.next();
+        carrier = userInput.nextLine();
 
         System.out.print("What is the phone number? ");
-        phoneNumber = userInput.nextInt();
+        phoneNumber = userInput.nextLine();
 
         System.out.print("Who is the owner of the phone? ");
-        owner = userInput.next();
+        owner = userInput.nextLine();
 
         phoneUser.setSerialNumber(serialNumber);
+        phoneUser.setModel(model);
+        phoneUser.setCarrier(carrier);
+        phoneUser.setPhoneNumber(phoneNumber);
+        phoneUser.setOwner(owner);
 
         return phoneUser;
+    }
+
+    public static void greetGuest(CellPhone guest)
+    {
+        System.out.println();
+        System.out.println("Welcome ");
     }
 }
