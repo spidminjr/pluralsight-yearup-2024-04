@@ -20,13 +20,12 @@ Markdown is used to format your README files and there are a number of things yo
 |--|-----|----|
 |1|John|Williams|
 
-
 #### Add Images
 
 ![Markdown Image](images/markdown.jpg "Markdown Screenshot")
 
-
 #### Insert Code snippets
+
 You can add code inline with a backtick `Book book = new Book();`.
 
 Or you can add full code blocks
