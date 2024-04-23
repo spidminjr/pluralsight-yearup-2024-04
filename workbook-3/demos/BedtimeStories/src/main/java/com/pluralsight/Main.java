@@ -12,7 +12,7 @@ public class Main
         System.out.println("Enter name of the file (goldilocks, hansel_and_gretel, mary_had_a_little_lamb): ");
         String fileName = userInput.nextLine().trim().toLowerCase();
 
-        String filePath = "BedtimeStories/files/goldilocks.txt";
+        String filePath = "files/" + fileName + ".txt";
 
         File file = new File(filePath);
 
