@@ -14,7 +14,9 @@ public class Main
                 new Person("Bob", "Johnson", 30),
                 new Person("Charlie", "Williams", 45),
                 new Person("Diana", "Brown", 22),
-                new Person("Ethan", "Jones", 38)
+                new Person("Ethan", "Jones", 38),
+                new Person("Fred", "Smith", 25)
+
         };
 
         int choice = 0;
