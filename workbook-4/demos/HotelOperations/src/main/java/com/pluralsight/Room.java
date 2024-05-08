@@ -3,17 +3,16 @@ package com.pluralsight;
 public class Room
 {
     private int numberOfBeds;
-    private double roomPrice;
-    private String isOccupied;
-    private String isDirty;
-    private String isAvailable;
+    private double price;
+    private boolean isOccupied;
+    private boolean isDirty;
 
-    public Room(int numberOfBeds, double roomPrice, String isOccupied, String isDirty, String isAvailable) {
+
+    public Room(int numberOfBeds, double price, boolean isOccupied, boolean isDirty) {
         this.numberOfBeds = numberOfBeds;
-        this.roomPrice = roomPrice;
+        this.price = price;
         this.isOccupied = isOccupied;
         this.isDirty = isDirty;
-        this.isAvailable = isAvailable;
     }
 
     public int getNumberOfBeds() {
@@ -24,41 +23,33 @@ public class Room
         this.numberOfBeds = numberOfBeds;
     }
 
-    public double getRoomPrice() {
-        return roomPrice;
+    public double getPrice() {
+        return price;
     }
 
-    public void setRoomPrice(double roomPrice) {
-        this.roomPrice = roomPrice;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public String getIsOccupied() {
+    public boolean isOccupied() {
         return isOccupied;
     }
 
-    public void setIsOccupied(String isOccupied) {
-        this.isOccupied = isOccupied;
+    public void setOccupied(boolean occupied) {
+        isOccupied = occupied;
     }
 
-    public String getIsDirty() {
+    public boolean isDirty() {
         return isDirty;
     }
 
-    public void setIsDirty(String isDirty) {
-        this.isDirty = isDirty;
-    }
-
-    public String getIsAvailable() {
-        return isAvailable;
-    }
-
-    public void setIsAvailable(String isAvailable) {
-        this.isAvailable = isAvailable;
+    public void setDirty(boolean dirty) {
+        isDirty = dirty;
     }
 
     public boolean isAvailable()
     {
-        return !(isDirty && !isOccupied);
+        return !isOccupied && !isDirty;
     }
 }
 
