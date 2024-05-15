@@ -1,9 +1,12 @@
 package com.pluralsight;
 
+import com.pluralsight.application.BankApplication;
+
 public class Main
 {
     public static void main(String[] args)
     {
-        System.out.println("Hello world!");
+        BankApplication app = new BankApplication();
+        app.run();
     }
 }
