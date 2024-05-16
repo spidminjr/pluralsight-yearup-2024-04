@@ -11,7 +11,7 @@ public class Main {
         asset.add(new House("Vacation home", "2018-06-15", 350000.00, "456 Beach Blvd", 2, 1500, 8000));
 
 
-        asset.add(new Vehicle("Tom's truck", "2017-05-20", 30000.00, "Toyota Camry", 2015, 50000));
+        asset.add(new Vehicle("Tom's truck", "2017-05-20", 30000.00, "Toyota Tacoma", 2015, 50000));
         asset.add(new Vehicle("Family car", "2019-10-10", 40000.00, "Honda Accord", 2016, 30000));
 
 
@@ -34,4 +34,3 @@ public class Main {
         }
     }
     }
-}
