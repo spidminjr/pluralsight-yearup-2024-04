@@ -1,5 +1,6 @@
 package com.pluralsight.ui;
 
+import com.pluralsight.models.Employee;
 import com.pluralsight.models.Person;
 import com.pluralsight.ui.enumerations.UserChoice;
 
@@ -14,6 +15,7 @@ public class UserInterface
     {
         while(true)
         {
+            System.out.println();
             System.out.println();
             System.out.println("What do you want to do?");
             printLineSeparator();
@@ -76,5 +78,41 @@ public class UserInterface
     private static void displayPerson(Person person)
     {
         System.out.printf("%s %s (%d) \n", person.getFirstName(), person.getLastName(), person.getAge());
+    }
+
+    public static String getSearchNameFromUser()
+    {
+        System.out.println();
+        System.out.print("Enter the first name you are searching for: ");
+        return in.nextLine().strip();
+    }
+
+    public static int getSearchAgeFromUser()
+    {
+        System.out.println();
+        System.out.print("Enter the age you are searching for: ");
+        return Integer.parseInt(in.nextLine().strip());
+    }
+
+    public static void displayMessage(String message)
+    {
+        System.out.println();
+        System.out.println(message);
+    }
+
+    public static void displayEmployees(List<Employee> employees)
+    {
+        System.out.println();
+        System.out.println("List of Employees");
+        printLineSeparator();
+        for(Employee employee: employees)
+        {
+            displayEmployee(employee);
+        }
+    }
+
+    private static void displayEmployee(Employee employee)
+    {
+        System.out.printf("%s %s (%d) - $ %.2f \n", employee.getFirstName(), employee.getLastName(), employee.getAge(), employee.getSalary());
     }
 }
