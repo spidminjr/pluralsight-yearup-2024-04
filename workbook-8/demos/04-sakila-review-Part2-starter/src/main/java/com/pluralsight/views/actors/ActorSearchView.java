@@ -1,17 +1,14 @@
-package com.pluralsight.views;
+package com.pluralsight.views.actors;
 
 import com.pluralsight.models.Actor;
+import com.pluralsight.views.ViewBase;
 
-import java.util.Scanner;
-
-public class ActorAddView
+public class ActorSearchView extends ViewBase
 {
     public Actor getNewActor()
     {
-        Scanner in = new Scanner(System.in);
-
         System.out.println();
-        System.out.println("Add new actor");
+        System.out.println("Search for Actors");
         System.out.println("-".repeat(40));
         System.out.print("Enter the first name: ");
         String firstName = in.nextLine().strip();

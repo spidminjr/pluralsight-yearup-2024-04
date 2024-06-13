@@ -1,10 +1,11 @@
-package com.pluralsight.views;
+package com.pluralsight.views.actors;
 
 import com.pluralsight.models.Actor;
+import com.pluralsight.views.ViewBase;
 
 import java.util.List;
 
-public class ActorListView
+public class ActorListView extends ViewBase
 {
     public void displayActors(List<Actor> actors)
     {
