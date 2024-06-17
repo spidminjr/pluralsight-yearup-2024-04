@@ -3,9 +3,6 @@ package com.pluralsight.application;
 import com.pluralsight.controllers.ActorsController;
 import com.pluralsight.services.ActorsDao;
 import com.pluralsight.services.mysql.MySqlActorsDao;
-import com.pluralsight.views.ActorListView;
-import com.pluralsight.views.ActorRowView;
-import com.pluralsight.views.HomeView;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 import javax.sql.DataSource;
@@ -51,10 +48,5 @@ public class ApplicationConfiguration
 
     // controllers
     public ActorsController actorsController = new ActorsController(actorsDao);
-
-    // views
-    public HomeView homeView = new HomeView();
-    public ActorListView actorListView = new ActorListView();
-    public ActorRowView actorRowView = new ActorRowView();
 
 }
